@@ -6,6 +6,19 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+  <div class="container-md text-center align-top" style= 'height: 200px' >
+    <h1 style= 'position: relative; top: 50%;'>Camila's Image Search Engine </h1>
+    <br>
+    <div class="st-default-search-input align-text-bottom" style= "margin: 100px;">
+    <input type="text" id="search" style= "width: 500px;">
+    <button onclick="searchPhotos()" class= "btn btn-success" >Search</button>
+    </div>
+      </div>
+
+    <div class="row"  id="images" style= 'height: 800px; padding: 70px;'>
+      <div class = "d-flex align-items-center flex-wrap" id="result">
+      </div>
+    </div>
 </body>
 <script src="image_search_script.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
