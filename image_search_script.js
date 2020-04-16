@@ -11,7 +11,15 @@ function searchPhotos(){
     .then(function(data){
       console.log(data);
       console.log(url);
-    
+       data.results.forEach(photo => {
+        image =`
+        <img src="${photo.urls.regular}" height= "200" width = "200"
+        onclick="document.getElementById('images').style.backgroundImage= 'url(${photo.urls.regular})' ">
+        `
+        document.getElementById("result").innerHTML += image
+
+
+    });
 
   })
 }
