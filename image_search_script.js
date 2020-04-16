@@ -1,7 +1,7 @@
 function searchPhotos(){
-  let clientID = "" //API Access key 
-  let query = //search value 
-  let url= // the API 
+  let clientID = "1XITqDaEsHKW9KLciUZfsQd5vquw4IjQ628f-SQvZ_c" //API Access key 
+  let query = document.getElementById("search").value //search value 
+  let url= "https://api.unsplash.com/search/photos?client_id="+clientID+"&query="+query // the API 
   
   //request to the API 
 }
