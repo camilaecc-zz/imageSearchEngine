@@ -4,4 +4,15 @@ function searchPhotos(){
   let url= "https://api.unsplash.com/search/photos?client_id="+clientID+"&query="+query // the API 
   
   //request to the API 
+  fetch(url)
+    .then(function(data){
+      return data.json();
+    })
+    .then(function(data){
+      console.log(data);
+      console.log(url);
+    
+
+  })
+}
 }
