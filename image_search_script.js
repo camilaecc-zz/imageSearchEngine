@@ -22,5 +22,12 @@ function searchPhotos(){
     });
 
   })
+  result.onclick += localStorage.setItem("im","${photo.description}");
+  console.log(localStorage);
 }
+
+function getHistory(){
+  // Retrieve
+  document.getElementById("history").innerHTML += localStorage.getItem("im");
+
 }
